@@ -1,6 +1,12 @@
-import React from "react";
-import Menu from "../components/Menu";
+import React from 'react';
+import TopMenu from '../components/menu/TopMenu';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 export default function Home() {
-  return <div><Menu /><br />Hello world!</div>;
+  return (
+    <>
+      <CssBaseline />
+      <TopMenu />
+    </>
+  );
 }

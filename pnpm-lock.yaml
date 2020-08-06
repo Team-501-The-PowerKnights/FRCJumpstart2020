@@ -1,8 +1,11 @@
 dependencies:
-  gatsby: 2.24.32_cf21576226b1c84b66fce90875abbe3c
+  '@material-ui/core': 4.11.0_react-dom@16.13.1+react@16.13.1
+  '@material-ui/icons': 4.9.1_64fe165cdb3bb1449f67ef4ad817869b
+  gatsby: 2.24.33_e9bad2c818bee44c1dc6e273b89eb805
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
   react-headroom: 3.0.0_react@16.13.1
+  typeface-nunito-sans: 0.0.72
 devDependencies:
   prettier: 2.0.5
 lockfileVersion: 5.1
@@ -1321,6 +1324,129 @@ packages:
       node: '>= 8.3'
     resolution:
       integrity: sha512-OXD0RgQ86Tu3MazKo8bnrkDRaDXXMGUqd+kTtLtK1Zb7CRzQcaSRPPPV37SvYTdevXEBVxe0HXylEjs8ibkmCw==
+  /@material-ui/core/4.11.0_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      '@material-ui/styles': 4.10.0_react-dom@16.13.1+react@16.13.1
+      '@material-ui/system': 4.9.14_react-dom@16.13.1+react@16.13.1
+      '@material-ui/types': 5.1.0
+      '@material-ui/utils': 4.10.2_react-dom@16.13.1+react@16.13.1
+      '@types/react-transition-group': 4.4.0
+      clsx: 1.1.1
+      hoist-non-react-statics: 3.3.2
+      popper.js: 1.16.1-lts
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+      react-is: 16.13.1
+      react-transition-group: 4.4.1_react-dom@16.13.1+react@16.13.1
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      '@types/react': ^16.8.6
+      react: ^16.8.0
+      react-dom: ^16.8.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    resolution:
+      integrity: sha512-bYo9uIub8wGhZySHqLQ833zi4ZML+XCBE1XwJ8EuUVSpTWWG57Pm+YugQToJNFsEyiKFhPh8DPD0bgupz8n01g==
+  /@material-ui/icons/4.9.1_64fe165cdb3bb1449f67ef4ad817869b:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      '@material-ui/core': 4.11.0_react-dom@16.13.1+react@16.13.1
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      '@material-ui/core': ^4.0.0
+      '@types/react': ^16.8.6
+      react: ^16.8.0
+      react-dom: ^16.8.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    resolution:
+      integrity: sha512-GBitL3oBWO0hzBhvA9KxqcowRUsA0qzwKkURyC8nppnC3fw54KPKZ+d4V1Eeg/UnDRSzDaI9nGCdel/eh9AQMg==
+  /@material-ui/styles/4.10.0_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      '@emotion/hash': 0.8.0
+      '@material-ui/types': 5.1.0
+      '@material-ui/utils': 4.10.2_react-dom@16.13.1+react@16.13.1
+      clsx: 1.1.1
+      csstype: 2.6.13
+      hoist-non-react-statics: 3.3.2
+      jss: 10.3.0
+      jss-plugin-camel-case: 10.3.0
+      jss-plugin-default-unit: 10.3.0
+      jss-plugin-global: 10.3.0
+      jss-plugin-nested: 10.3.0
+      jss-plugin-props-sort: 10.3.0
+      jss-plugin-rule-value-function: 10.3.0
+      jss-plugin-vendor-prefixer: 10.3.0
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      '@types/react': ^16.8.6
+      react: ^16.8.0
+      react-dom: ^16.8.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    resolution:
+      integrity: sha512-XPwiVTpd3rlnbfrgtEJ1eJJdFCXZkHxy8TrdieaTvwxNYj42VnnCyFzxYeNW9Lhj4V1oD8YtQ6S5Gie7bZDf7Q==
+  /@material-ui/system/4.9.14_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      '@material-ui/utils': 4.10.2_react-dom@16.13.1+react@16.13.1
+      csstype: 2.6.13
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      '@types/react': ^16.8.6
+      react: ^16.8.0
+      react-dom: ^16.8.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    resolution:
+      integrity: sha512-oQbaqfSnNlEkXEziDcJDDIy8pbvwUmZXWNqlmIwDqr/ZdCK8FuV3f4nxikUh7hvClKV2gnQ9djh5CZFTHkZj3w==
+  /@material-ui/types/5.1.0:
+    dev: false
+    peerDependencies:
+      '@types/react': '*'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    resolution:
+      integrity: sha512-7cqRjrY50b8QzRSYyhSpx4WRw2YuO0KKIGQEVk5J8uoz2BanawykgZGoWEqKm7pVIbzFDN0SpPcVV4IhOFkl8A==
+  /@material-ui/utils/4.10.2_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+      react-is: 16.13.1
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      react: ^16.8.0
+      react-dom: ^16.8.0
+    resolution:
+      integrity: sha512-eg29v74P7W5r6a4tWWDAAfZldXIzfyO1am2fIsC39hdUUHm/33k6pGOKPbgDjg/U/4ifmgAePy/1OjkKN6rFRw==
   /@mdx-js/mdx/2.0.0-next.7:
     dependencies:
       '@babel/core': 7.10.5
@@ -1845,6 +1971,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-h0NbqXN/tJuBY/xggZSej1SKQEstbHO7J/omt1tYoFGmj3YXOodZKbbqD4mNDh7zvEGYd7YFrac1LTtAr3xsYQ==
+  /@types/react-transition-group/4.4.0:
+    dependencies:
+      '@types/react': 16.9.44
+    dev: false
+    resolution:
+      integrity: sha512-/QfLHGpu+2fQOqQaXh8MG9q03bFENooTb/it4jr5kKaZlDQfWvjqWZg48AwzPVMBHlRuTRAY7hRHCEOXz5kV6w==
   /@types/react/16.9.44:
     dependencies:
       '@types/prop-types': 15.7.3
@@ -2654,16 +2786,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-JrB9ZASlMAfkRF+5NdgoQxgenhJxzXFEO1vrqsSDJdzLrC38L2wrvXF9mm1YLbrehkZxcrNz9UYDyARP4jaY9g==
-  /babel-plugin-remove-graphql-queries/2.9.15_gatsby@2.24.32:
+  /babel-plugin-remove-graphql-queries/2.9.16_gatsby@2.24.33:
     dependencies:
-      gatsby: 2.24.32_cf21576226b1c84b66fce90875abbe3c
+      gatsby: 2.24.33_e9bad2c818bee44c1dc6e273b89eb805
     dev: false
     engines:
       node: '>=10.13.0'
     peerDependencies:
       gatsby: ^2.0.0
     resolution:
-      integrity: sha512-cGNEEOO32kKcI+ZZBcCIliPOvyd7/Dp8zyJ/ZD1lXKuH1frzdbWG2nbxm+iil8OIxWaeHfxf083IHvb868TY9A==
+      integrity: sha512-7Z+awkeghPRk4axY8N6ywQu9GpxpqHTkXRiZ+VxDaIppbybeZsAQ7uA6B4B63M4nm0BSOrHZzZWuT/kOg2RA8g==
   /babel-plugin-syntax-jsx/6.18.0:
     dev: false
     resolution:
@@ -3449,6 +3581,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-0dyXOSAxTfZ/vrlCI7TuNQI56Ws=
+  /clsx/1.1.1:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
   /coa/2.0.2:
     dependencies:
       '@types/q': 1.5.4
@@ -4006,6 +4144,13 @@ packages:
       node: '>=8.0.0'
     resolution:
       integrity: sha512-7UvkEYgBAHRG9Nt980lYxjsTrCyHFN53ky3wVsDkiMdVqylqRt+Zc+jm5qw7/qyOvN2dHSYtX0e4MbCCExSvnA==
+  /css-vendor/2.0.8:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      is-in-browser: 1.1.3
+    dev: false
+    resolution:
+      integrity: sha512-x9Aq0XTInxrkuFeHKbYC7zWY8ai7qJ04Kxd9MnvbC1uO5DagxoHQjm4JvG+vCdXOoFtCjbL2XSZfxmoYa9uQVQ==
   /css-what/2.1.3:
     dev: false
     resolution:
@@ -4462,6 +4607,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==
+  /dom-helpers/5.2.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      csstype: 3.0.2
+    dev: false
+    resolution:
+      integrity: sha512-Ru5o9+V8CpunKnz5LGgWXkmrH/20cGKwcHwS4m73zIvs54CN9epEmT/HLqFJW3kXpakAFkEdzgy1hzlJe3E4OQ==
   /dom-serializer/0.2.2:
     dependencies:
       domelementtype: 2.0.1
@@ -5626,7 +5778,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
-  /gatsby-cli/2.12.77_gatsby@2.24.32+react-dom@16.13.1:
+  /gatsby-cli/2.12.77_gatsby@2.24.33+react-dom@16.13.1:
     dependencies:
       '@babel/code-frame': 7.10.4
       '@hapi/joi': 15.1.1
@@ -5642,7 +5794,7 @@ packages:
       fs-exists-cached: 1.0.0
       fs-extra: 8.1.0
       gatsby-core-utils: 1.3.15
-      gatsby-recipes: 0.2.7_cf21576226b1c84b66fce90875abbe3c
+      gatsby-recipes: 0.2.7_e9bad2c818bee44c1dc6e273b89eb805
       gatsby-telemetry: 1.3.26
       hosted-git-info: 3.0.5
       ink: 2.7.1_react@16.13.1
@@ -5706,7 +5858,7 @@ packages:
       node: '>=10.13.0'
     resolution:
       integrity: sha512-kHVHzGvebZlUGeGOoAAJVdLWAXftZiYeOk6EitWFkXEZtYxpgXM5Pum9qDMCzUCJ6pzS8r9U5IBJncjMal3ScQ==
-  /gatsby-interface/0.0.166_e7e94e003854cabe8331896d3296d913:
+  /gatsby-interface/0.0.166_034b020878622fd428041390b63bb15c:
     dependencies:
       '@emotion/core': 10.0.28_react@16.13.1
       '@emotion/styled': 10.0.27_c989b1aa057905c7a8b69bf973f55a19
@@ -5722,7 +5874,7 @@ packages:
       case: 1.6.3
       date-fns: 2.15.0
       formik: 2.1.5_react@16.13.1
-      gatsby: 2.24.32_cf21576226b1c84b66fce90875abbe3c
+      gatsby: 2.24.33_e9bad2c818bee44c1dc6e273b89eb805
       gatsby-design-tokens: 2.0.10
       lodash.sample: 4.2.1
       prop-types: 15.7.2
@@ -5782,12 +5934,12 @@ packages:
       node: '>=10.13.0'
     resolution:
       integrity: sha512-waq2TpDjNxH5+Q+xFnuf9of3Xt0wxBkJwb6VbCGz4LS0XQ6c9KYMgC2OCBwPJOnv2Vo/6BglpRyn4lYcJEQJdw==
-  /gatsby-plugin-page-creator/2.3.20_gatsby@2.24.32:
+  /gatsby-plugin-page-creator/2.3.20_gatsby@2.24.33:
     dependencies:
       '@babel/runtime': 7.11.2
       bluebird: 3.7.2
       fs-exists-cached: 1.0.0
-      gatsby: 2.24.32_cf21576226b1c84b66fce90875abbe3c
+      gatsby: 2.24.33_e9bad2c818bee44c1dc6e273b89eb805
       gatsby-page-utils: 0.2.20
       glob: 7.1.6
       lodash: 4.17.19
@@ -5799,7 +5951,7 @@ packages:
       gatsby: ^2.0.0
     resolution:
       integrity: sha512-EtoKgXNXvkY5IA4XvBPhlM5TelR6R04e3fpcGWuYO4oqts/9Ih0GGI9CzUBRXNwM5MplNBUcUutyAwMtT9NzVA==
-  /gatsby-plugin-typescript/2.4.16_gatsby@2.24.32:
+  /gatsby-plugin-typescript/2.4.17_gatsby@2.24.33:
     dependencies:
       '@babel/core': 7.11.1
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.10.4_@babel+core@7.11.1
@@ -5807,14 +5959,14 @@ packages:
       '@babel/plugin-proposal-optional-chaining': 7.11.0_@babel+core@7.11.1
       '@babel/preset-typescript': 7.10.4_@babel+core@7.11.1
       '@babel/runtime': 7.11.2
-      babel-plugin-remove-graphql-queries: 2.9.15_gatsby@2.24.32
+      babel-plugin-remove-graphql-queries: 2.9.16_gatsby@2.24.33
     dev: false
     engines:
       node: '>=10.13.0'
     peerDependencies:
       gatsby: '*'
     resolution:
-      integrity: sha512-A95+B10jn7nCBROibfxWe2/jPtXxq4jjZpjhvPcC95xXg8q7J1Zb3USP6oJSYmhQ4EI+JPcvljlnOS6dqn//wg==
+      integrity: sha512-Bp0e2Nc3CYYfhYvvIO7DIZOzy6hlYDJFBE/rHPK9mu5RLX8THqNmT53579SJWx4ozSPCNK41EfPbAJdtEgEPaA==
   /gatsby-react-router-scroll/3.0.12_3914268316c542370cbb046de235e031:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -5830,7 +5982,7 @@ packages:
       react-dom: ^16.4.2
     resolution:
       integrity: sha512-rA7qe/LjKAPnwI4KdKjvx94XIV9a4hCPT+BzKBiifTkm5sFpQyXsfEWmaFfzIaxpKxOwrWsJGpW0OA39yunL8g==
-  /gatsby-recipes/0.2.7_cf21576226b1c84b66fce90875abbe3c:
+  /gatsby-recipes/0.2.7_e9bad2c818bee44c1dc6e273b89eb805:
     dependencies:
       '@babel/core': 7.11.1
       '@babel/generator': 7.11.0
@@ -5867,7 +6019,7 @@ packages:
       formik: 2.1.5_react@16.13.1
       fs-extra: 8.1.0
       gatsby-core-utils: 1.3.15
-      gatsby-interface: 0.0.166_e7e94e003854cabe8331896d3296d913
+      gatsby-interface: 0.0.166_034b020878622fd428041390b63bb15c
       gatsby-telemetry: 1.3.26
       glob: 7.1.6
       graphql: 14.7.0
@@ -5943,7 +6095,7 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-10DqlSw0mvuRcQfoYmYdt+XAZqECqCUY8wYWo1Vpg3BwSpRtaW2rFjDqPa+MZSB5qfBfL92urDw8g1uZZolBNQ==
-  /gatsby/2.24.32_cf21576226b1c84b66fce90875abbe3c:
+  /gatsby/2.24.33_e9bad2c818bee44c1dc6e273b89eb805:
     dependencies:
       '@babel/code-frame': 7.10.4
       '@babel/core': 7.11.1
@@ -5966,7 +6118,7 @@ packages:
       babel-loader: 8.1.0_9947c2c07be3d63145c9e4a9dd0b611a
       babel-plugin-add-module-exports: 0.3.3
       babel-plugin-dynamic-import-node: 2.3.3
-      babel-plugin-remove-graphql-queries: 2.9.15_gatsby@2.24.32
+      babel-plugin-remove-graphql-queries: 2.9.16_gatsby@2.24.33
       babel-preset-gatsby: 0.5.5_@babel+core@7.11.1+core-js@3.6.5
       better-opn: 1.0.0
       better-queue: 3.8.10
@@ -6006,13 +6158,13 @@ packages:
       find-cache-dir: 3.3.1
       fs-exists-cached: 1.0.0
       fs-extra: 8.1.0
-      gatsby-cli: 2.12.77_gatsby@2.24.32+react-dom@16.13.1
+      gatsby-cli: 2.12.77_gatsby@2.24.33+react-dom@16.13.1
       gatsby-core-utils: 1.3.15
       gatsby-graphiql-explorer: 0.4.12
       gatsby-legacy-polyfills: 0.0.2
       gatsby-link: 2.4.13_3914268316c542370cbb046de235e031
-      gatsby-plugin-page-creator: 2.3.20_gatsby@2.24.32
-      gatsby-plugin-typescript: 2.4.16_gatsby@2.24.32
+      gatsby-plugin-page-creator: 2.3.20_gatsby@2.24.33
+      gatsby-plugin-typescript: 2.4.17_gatsby@2.24.33
       gatsby-react-router-scroll: 3.0.12_3914268316c542370cbb046de235e031
       gatsby-telemetry: 1.3.26
       glob: 7.1.6
@@ -6099,7 +6251,7 @@ packages:
       react-dom: ^16.4.2
     requiresBuild: true
     resolution:
-      integrity: sha512-lsy5JaqUNSfmaorph+S9K5gG5Ux9qXSVb/TDPyrwWVQboq0njwflq0tOI/uiWuhkvlEvs+xMoh3QpGzC4rvH7Q==
+      integrity: sha512-Pf7pqY9oz+arD0n2UvRgMuw5SK5B3zDVaMzYA2fQYV+Z7th8hR0i/ek0PMFv1iCDn0eFzv5bRcJVQM6AopuxEg==
   /gensync/1.0.0-beta.1:
     dev: false
     engines:
@@ -6803,6 +6955,10 @@ packages:
       node: '>=8.12.0'
     resolution:
       integrity: sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
+  /hyphenate-style-name/1.0.4:
+    dev: false
+    resolution:
+      integrity: sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
   /iconv-lite/0.4.24:
     dependencies:
       safer-buffer: 2.1.2
@@ -7333,6 +7489,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gyPJuv83bHMpocVYoqof5VDiZveEoGoFL8m3BXNb2VW8Xs+rz9kqO8LOQ5DH6EsuvilT1ApazU0pyl+ytbPtlw==
+  /is-in-browser/1.1.3:
+    dev: false
+    resolution:
+      integrity: sha1-Vv9NtoOgeMYILrldrX3GLh0E+DU=
   /is-installed-globally/0.3.2:
     dependencies:
       global-dirs: 2.0.1
@@ -7728,6 +7888,68 @@ packages:
     dev: false
     resolution:
       integrity: sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
+  /jss-plugin-camel-case/10.3.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      hyphenate-style-name: 1.0.4
+      jss: 10.3.0
+    dev: false
+    resolution:
+      integrity: sha512-tadWRi/SLWqLK3EUZEdDNJL71F3ST93Zrl9JYMjV0QDqKPAl0Liue81q7m/nFUpnSTXczbKDy4wq8rI8o7WFqA==
+  /jss-plugin-default-unit/10.3.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      jss: 10.3.0
+    dev: false
+    resolution:
+      integrity: sha512-tT5KkIXAsZOSS9WDSe8m8lEHIjoEOj4Pr0WrG0WZZsMXZ1mVLFCSsD2jdWarQWDaRNyMj/I4d7czRRObhOxSuw==
+  /jss-plugin-global/10.3.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      jss: 10.3.0
+    dev: false
+    resolution:
+      integrity: sha512-etYTG/y3qIR/vxZnKY+J3wXwObyBDNhBiB3l/EW9/pE3WHE//BZdK8LFvQcrCO48sZW1Z6paHo6klxUPP7WbzA==
+  /jss-plugin-nested/10.3.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      jss: 10.3.0
+      tiny-warning: 1.0.3
+    dev: false
+    resolution:
+      integrity: sha512-qWiEkoXNEkkZ+FZrWmUGpf+zBsnEOmKXhkjNX85/ZfWhH9dfGxUCKuJFuOWFM+rjQfxV4csfesq4hY0jk8Qt0w==
+  /jss-plugin-props-sort/10.3.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      jss: 10.3.0
+    dev: false
+    resolution:
+      integrity: sha512-boetORqL/lfd7BWeFD3K+IyPqyIC+l3CRrdZr+NPq7Noqp+xyg/0MR7QisgzpxCEulk+j2CRcEUoZsvgPC4nTg==
+  /jss-plugin-rule-value-function/10.3.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      jss: 10.3.0
+      tiny-warning: 1.0.3
+    dev: false
+    resolution:
+      integrity: sha512-7WiMrKIHH3rwxTuJki9+7nY11r1UXqaUZRhHvqTD4/ZE+SVhvtD5Tx21ivNxotwUSleucA/8boX+NF21oXzr5Q==
+  /jss-plugin-vendor-prefixer/10.3.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      css-vendor: 2.0.8
+      jss: 10.3.0
+    dev: false
+    resolution:
+      integrity: sha512-sZQbrcZyP5V0ADjCLwUA1spVWoaZvM7XZ+2fSeieZFBj31cRsnV7X70FFDerMHeiHAXKWzYek+67nMDjhrZAVQ==
+  /jss/10.3.0:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      csstype: 2.6.13
+      is-in-browser: 1.1.3
+      tiny-warning: 1.0.3
+    dev: false
+    resolution:
+      integrity: sha512-B5sTRW9B6uHaUVzSo9YiMEOEp3UX8lWevU0Fsv+xtRnsShmgCfIYX44bTH8bPJe6LQKqEXku3ulKuHLbxBS97Q==
   /jsx-ast-utils/2.4.1:
     dependencies:
       array-includes: 3.1.1
@@ -9372,6 +9594,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
+  /popper.js/1.16.1-lts:
+    dev: false
+    resolution:
+      integrity: sha512-Kjw8nKRl1m+VrSFCoVGPph93W/qrSO7ZkqPpTf7F4bk/sqcfWK019dWBUpE/fBOsOQY1dks/Bmcbfn1heM/IsA==
   /portfinder/1.0.28:
     dependencies:
       async: 2.6.3
@@ -10273,6 +10499,20 @@ packages:
         optional: true
     resolution:
       integrity: sha512-DH4ED+YABC1dhvSDYGGreAHmfuTXj6+ezT3CmHoqIEfxNgEYfIMoOtmbRp42JsUst3IPqBTDL+8r4TF7EWhIHw==
+  /react-transition-group/4.4.1_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      dom-helpers: 5.2.0
+      loose-envify: 1.4.0
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+    dev: false
+    peerDependencies:
+      react: '>=16.6.0'
+      react-dom: '>=16.6.0'
+    resolution:
+      integrity: sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
   /react/16.13.1:
     dependencies:
       loose-envify: 1.4.0
@@ -12016,6 +12256,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  /typeface-nunito-sans/0.0.72:
+    dev: false
+    resolution:
+      integrity: sha512-b58R4movZchZJNe5pWvqMVoJzKRs7GP09iIri4WWQOs9+G+yjoTSIpOUMU2xtLmxuyXUo1F8XhnOHY06kSDhuQ==
   /unc-path-regex/0.1.2:
     dev: false
     engines:
@@ -12944,8 +13188,11 @@ packages:
     resolution:
       integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
 specifiers:
-  gatsby: ^2.24.32
+  '@material-ui/core': ^4.11.0
+  '@material-ui/icons': ^4.9.1
+  gatsby: ^2.24.33
   prettier: 2.0.5
   react: ^16.13.1
   react-dom: ^16.13.1
   react-headroom: ^3.0.0
+  typeface-nunito-sans: ^0.0.72
