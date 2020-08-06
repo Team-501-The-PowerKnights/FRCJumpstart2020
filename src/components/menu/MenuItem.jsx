@@ -11,6 +11,7 @@ export default function MenuItem({ link, children, openInNewTab }) {
         color: hovering ? `#FFDE17` : `#FFFFFF`,
         fontFamily: 'Nunito Sans',
         textDecoration: `none`,
+        fontSize: `16px`,
       }}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
