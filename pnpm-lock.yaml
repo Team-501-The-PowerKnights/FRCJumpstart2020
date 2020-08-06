@@ -15264,9 +15264,9 @@ packages:
     resolution:
       integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
 specifiers:
-  gatsby: ^2.24.26
+  gatsby: ^2.24.27
   gatsby-plugin-netlify-cms: 4.1.40
   netlify-cms-app: 2.11.20
   prettier: 2.0.5
-  react: ^16.12.0
-  react-dom: ^16.12.0
+  react: ^16.13.1
+  react-dom: ^16.13.1
