@@ -1,11 +1,9 @@
 import React from 'react';
 import Headroom from 'react-headroom';
 import { makeStyles } from '@material-ui/core/styles';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
 
 import MenuItem from './MenuItem';
+import SocialMenu from "../social_menu/SocialMenu";
 
 const useStyles = makeStyles({
   menu: {
@@ -16,23 +14,6 @@ const useStyles = makeStyles({
     textAlign: `center`,
     display: `flex`,
     justifyContent: `space-around`,
-  },
-  socialMenu: {
-    listStyleType: `none`,
-    margin: `0`,
-    padding: `0`,
-    flexGrow: 5,
-    textAlign: `center`,
-    display: `flex`,
-    justifyContent: `space-around`,
-  },
-  menuItem: {
-    display: `inline`,
-  },
-  link: {
-    textDecoration: `none`,
-    color: `#FFFFFF`,
-    fontFamily: `Nunito Sans`,
   },
 });
 
@@ -52,7 +33,7 @@ export default function TopMenu() {
             src={`images/top_logo.png`}
             alt={`FRC Jumpstart`}
             height={`100`}
-            style={{ flexGrow: 1 }}
+            style={{ flexGrow: 2 }}
           />
         </a>
         <div style={{ flexGrow: 20 }}></div>
@@ -70,17 +51,10 @@ export default function TopMenu() {
             Subscribe
           </MenuItem>
         </ul>
-        <ul className={classes.socialMenu}>
-          <MenuItem link='https://www.facebook.com' openInNewTab='true'>
-            <FacebookIcon />
-          </MenuItem>
-          <MenuItem link='https://www.twitter.com' openInNewTab='true'>
-            <TwitterIcon />
-          </MenuItem>
-          <MenuItem link='https://www.instagram.com' openInNewTab='true'>
-            <InstagramIcon />
-          </MenuItem>
-        </ul>
+        <div style={{ flexGrow: 5 }}>
+          <SocialMenu />
+        </div>
+        <div style={{ flexGrow: 2 }}></div>
       </div>
     </Headroom>
   );
