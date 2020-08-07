@@ -3,7 +3,7 @@ import Headroom from 'react-headroom';
 import { makeStyles } from '@material-ui/core/styles';
 
 import MenuItem from './MenuItem';
-import SocialMenu from "../social_menu/SocialMenu";
+import SocialMenu from '../social_menu/SocialMenu';
 
 const useStyles = makeStyles({
   menu: {

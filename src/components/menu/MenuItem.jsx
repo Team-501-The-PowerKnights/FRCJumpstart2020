@@ -15,7 +15,8 @@ export default function MenuItem({ link, children, openInNewTab, hoverColor }) {
       }}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
-      target={openInNewTab ? '_blank' : '_self'} rel={`noreferrer`}>
+      target={openInNewTab ? '_blank' : '_self'}
+      rel={`noreferrer`}>
       {children}
     </a>
   );
