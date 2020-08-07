@@ -38,21 +38,21 @@ export default function TopMenu() {
         </a>
         <div style={{ flexGrow: 20 }}></div>
         <ul className={classes.menu}>
-          <MenuItem link='#about' openInNewTab='false'>
+          <MenuItem link='#about' openInNewTab='false' hoverColor='#FFDE17'>
             About
           </MenuItem>
-          <MenuItem link='#speakers' openInNewTab='false'>
+          <MenuItem link='#speakers' openInNewTab='false' hoverColor='#FFDE17'>
             Speakers
           </MenuItem>
-          <MenuItem link='#schedule' openInNewTab='false'>
+          <MenuItem link='#schedule' openInNewTab='false' hoverColor='#FFDE17'>
             Schedule
           </MenuItem>
-          <MenuItem link='#subscribe' openInNewTab='false'>
+          <MenuItem link='#subscribe' openInNewTab='false' hoverColor='#FFDE17'>
             Subscribe
           </MenuItem>
         </ul>
         <div style={{ flexGrow: 5 }}>
-          <SocialMenu />
+          <SocialMenu hoverColor='#FFDE17' />
         </div>
         <div style={{ flexGrow: 2 }}></div>
       </div>

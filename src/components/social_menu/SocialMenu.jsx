@@ -24,17 +24,17 @@ const useStyles = makeStyles({
     },
 });
 
-export default function SocialMenu() {
+export default function SocialMenu({ hoverColor }) {
     const classes = useStyles();
 
     return (<ul className={classes.socialMenu}>
-        <MenuItem link='https://www.facebook.com/FRCJumpstartNE/' openInNewTab='true'>
+        <MenuItem link='https://www.facebook.com/FRCJumpstartNE/' openInNewTab='true' hoverColor={hoverColor}>
             <FacebookIcon />
         </MenuItem>
-        <MenuItem link='https://www.twitter.com' openInNewTab='true'>
+        <MenuItem link='https://www.twitter.com' openInNewTab='true' hoverColor={hoverColor}>
             <TwitterIcon />
         </MenuItem>
-        <MenuItem link='https://www.instagram.com' openInNewTab='true'>
+        <MenuItem link='https://www.instagram.com' openInNewTab='true' hoverColor={hoverColor}>
             <InstagramIcon />
         </MenuItem>
     </ul>);
