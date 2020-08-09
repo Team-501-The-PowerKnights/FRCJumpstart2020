@@ -16,7 +16,7 @@ export default function TopMenu() {
       <Navbar style={{
         backgroundColor: `#2F3292`
       }}
-        expand='lg'>
+        expand='lg' variant='dark'>
 
         <Navbar.Brand href="/"><img
           src={logo}
@@ -24,7 +24,7 @@ export default function TopMenu() {
           height={`100`}
           style={{ display: `inline` }}
         /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" color="light" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <MenuItem link='#about' openInNewTab='false' hoverColor='#FFDE17'>
