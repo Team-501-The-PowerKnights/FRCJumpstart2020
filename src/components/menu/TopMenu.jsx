@@ -5,6 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from './MenuItem';
 import SocialMenu from '../social_menu/SocialMenu';
 
+import logo from '../../images/logo.png';
+
 const useStyles = makeStyles({
   menu: {
     listStyleType: `none`,
@@ -20,7 +22,9 @@ const useStyles = makeStyles({
 export default function TopMenu() {
   const classes = useStyles();
   return (
-    <Headroom>
+    <Headroom style={{
+      maxWidth: `100%`
+    }}>
       <div
         style={{
           display: `flex`,
@@ -30,7 +34,7 @@ export default function TopMenu() {
         }}>
         <a href='/' style={{ margin: `0`, padding: `0`, height: 100 }}>
           <img
-            src={`images/top_logo.png`}
+            src={logo}
             alt={`FRC Jumpstart`}
             height={`100`}
             style={{ flexGrow: 2 }}
@@ -56,6 +60,6 @@ export default function TopMenu() {
         </div>
         <div style={{ flexGrow: 2 }}></div>
       </div>
-    </Headroom>
+    </Headroom >
   );
 }

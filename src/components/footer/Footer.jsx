@@ -2,13 +2,15 @@ import React from 'react';
 
 import SocialMenu from '../social_menu/SocialMenu';
 
+import logo from '../../images/logo.png';
+
 import 'typeface-nunito-sans';
 
 export default function Footer() {
   return (
     <div
       style={{
-        position: `fixed`,
+        position: `relative`,
         left: 0,
         bottom: 0,
         width: `100%`,
@@ -21,7 +23,7 @@ export default function Footer() {
         <div style={{ flexGrow: 2 }} />
         <a href='/' style={{ margin: `0`, padding: `0` }}>
           <img
-            src={`images/top_logo.png`}
+            src={logo}
             alt={`FRC Jumpstart`}
             height={`150`}
             style={{ flexGrow: 5 }}
