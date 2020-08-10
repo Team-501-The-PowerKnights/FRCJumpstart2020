@@ -6,6 +6,7 @@ dependencies:
   gatsby-plugin-netlify: 2.3.12_gatsby@2.24.33
   gatsby-plugin-offline: 3.2.22_gatsby@2.24.33
   gatsby-plugin-react-helmet: 3.3.10_97bb33a40719371eb0c002adaa2a3c34
+  gatsby-plugin-sitemap: 2.4.11_gatsby@2.24.33
   react: 16.13.1
   react-bootstrap: 1.3.0_react-dom@16.13.1+react@16.13.1
   react-dom: 16.13.1_react@16.13.1
@@ -6162,6 +6163,20 @@ packages:
       react-helmet: ^5.1.3 || ^6.0.0
     resolution:
       integrity: sha512-AcXYwmS3r298JWs6iQ3OLNxIe8L8i5a2iSdLr/SDMpHqumYm7q/vB9kCX0et5wM7DIuZ7aPXDrdi5yDCAvU5lg==
+  /gatsby-plugin-sitemap/2.4.11_gatsby@2.24.33:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      gatsby: 2.24.33_e9bad2c818bee44c1dc6e273b89eb805
+      minimatch: 3.0.4
+      pify: 3.0.0
+      sitemap: 1.13.0
+    dev: false
+    engines:
+      node: '>=10.13.0'
+    peerDependencies:
+      gatsby: ^2.0.0
+    resolution:
+      integrity: sha512-OX8Jry3t6iPqWoo/WDo0DTmaKuIPa0RDrd/fFeS5DYGyclpIVnAK1fr92X2222ZtdRwn6NLd5c+RpNrjxDvJDA==
   /gatsby-plugin-typescript/2.4.17_gatsby@2.24.33:
     dependencies:
       '@babel/core': 7.11.1
@@ -11801,6 +11816,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
+  /sitemap/1.13.0:
+    dependencies:
+      underscore: 1.10.2
+      url-join: 1.1.0
+    dev: false
+    resolution:
+      integrity: sha1-Vpy+IYAgKSamKiZs094Jyc60P4M=
   /slash/3.0.0:
     dev: false
     engines:
@@ -12854,6 +12876,10 @@ packages:
       react: '>=15.0.0'
     resolution:
       integrity: sha512-EcPYhot3uWTS3w00R32R2+vS8Vr53tttrvMj/yA1uYRhf8hbTG2GyugGqWDY0qIskxn0uTTojVd6wPYW9ZEf8Q==
+  /underscore/1.10.2:
+    dev: false
+    resolution:
+      integrity: sha512-N4P+Q/BuyuEKFJ43B9gYuOj4TQUHXX+j2FqguVOpjkssLUUrnJofCcBccJSCoeturDoZU6GorDTHSvUDlSQbTg==
   /unherit/1.1.3:
     dependencies:
       inherits: 2.0.4
@@ -13089,6 +13115,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+  /url-join/1.1.0:
+    dev: false
+    resolution:
+      integrity: sha1-dBxsL0WWxIMNZxhGCSDQySIC3Hg=
   /url-loader/1.1.2_webpack@4.43.0:
     dependencies:
       loader-utils: 1.4.0
@@ -13922,6 +13952,7 @@ specifiers:
   gatsby-plugin-netlify: ^2.3.12
   gatsby-plugin-offline: ^3.2.22
   gatsby-plugin-react-helmet: ^3.3.10
+  gatsby-plugin-sitemap: ^2.4.11
   prettier: 2.0.5
   react: ^16.13.1
   react-bootstrap: ^1.3.0

@@ -5,6 +5,9 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://dazzling-bhaskara-629621.netlify.app/`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -27,5 +30,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
   ],
 };
