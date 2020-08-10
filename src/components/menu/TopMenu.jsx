@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import MenuItem from './MenuItem';
 import SocialMenu from '../social_menu/SocialMenu';
 
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.webp';
 
 export default function TopMenu() {
   return (

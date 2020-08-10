@@ -10,9 +10,9 @@ import Footer from '../components/footer/Footer';
 
 import Button from 'react-bootstrap/Button';
 
-import banner from '../images/banner.jpg';
-import logo from '../images/logo.png';
-import crowd from '../images/crowd.jpeg';
+import banner from '../images/banner.webp';
+import logo from '../images/logo.webp';
+import crowd from '../images/crowd.webp';
 
 import 'typeface-nunito-sans';
 import Card from 'react-bootstrap/Card';
