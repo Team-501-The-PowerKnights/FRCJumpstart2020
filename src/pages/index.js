@@ -17,7 +17,7 @@ import crowd from '../images/crowd.jpeg';
 
 import 'typeface-nunito-sans';
 import Card from 'react-bootstrap/Card';
-import { ListGroup } from 'react-bootstrap';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 export default function Home() {
   return (
@@ -106,35 +106,64 @@ export default function Home() {
       <Jumbotron
         className='text-light'
         style={{ backgroundColor: `#FFDE17`, marginBottom: 0, padding: `10%` }}>
-        <ListGroup
-          horizontal
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            width: `min-content`,
-          }}>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#FFDE17` }}>
-            Participants
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#FFDE17` }}>
-            Tracks
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#FFDE17` }}>
-            Sessions
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#FFDE17` }}>
-            Speakers
-          </ListGroup.Item>
-        </ListGroup>
-      </Jumbotron>
+        <div style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+        }}>
+          <ListGroup horizontal='md' style={{ display: `flex` }}>
+            <ListGroup.Item style={{
+              backgroundColor: `#FFDE17`,
+              border: `none`,
+              flexGrow: 2,
+            }}>
+              <Card
+                className='text-center'
+                style={{ backgroundColor: `#FFFFFF`, display: `inline-block`, width: `100%` }}>
+                <Card.Body>
+                  <Card.Title style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                </Card.Body>
+                <Card.Footer className='text-dark'>Participants</Card.Footer>
+              </Card>
+            </ListGroup.Item>
+            <ListGroup.Item style={{
+              backgroundColor: `#FFDE17`,
+              border: `none`,
+              flexGrow: 2,
+            }}><Card
+              className='text-center'
+              style={{ backgroundColor: `#FFFFFF`, display: `inline-block`, width: `100%` }}>
+                <Card.Body>
+                  <Card.Title style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                </Card.Body>
+                <Card.Footer className='text-dark'>Tracks</Card.Footer>
+              </Card></ListGroup.Item>
+            <ListGroup.Item style={{
+              backgroundColor: `#FFDE17`,
+              border: `none`,
+              flexGrow: 2,
+            }}><Card
+              className='text-center'
+              style={{ backgroundColor: `#FFFFFF`, display: `inline-block`, width: `100%` }}>
+                <Card.Body>
+                  <Card.Title style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                </Card.Body>
+                <Card.Footer className='text-dark'>Sessions</Card.Footer>
+              </Card></ListGroup.Item>
+            <ListGroup.Item style={{
+              backgroundColor: `#FFDE17`,
+              border: `none`,
+              flexGrow: 2,
+            }}><Card
+              className='text-center'
+              style={{ backgroundColor: `#FFFFFF`, display: `inline-block`, width: `100%` }}>
+                <Card.Body>
+                  <Card.Title style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                </Card.Body>
+                <Card.Footer className='text-dark'>Speakers</Card.Footer>
+              </Card></ListGroup.Item >
+          </ListGroup >
+        </div>
+      </Jumbotron >
       <Jumbotron
         className='text-light'
         id='speakers'
