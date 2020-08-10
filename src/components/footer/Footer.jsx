@@ -4,82 +4,74 @@ import logo from '../../images/logo.png';
 
 import 'typeface-nunito-sans';
 
-import Media from 'react-bootstrap/Media';
+import Container from 'react-bootstrap/Container';
 
 export default function Footer() {
   return (
-    <Media
+    <Container
       style={{
         backgroundColor: `#FFDE17`,
         padding: `2%`,
         bottom: 0,
         left: 0,
-        width: `100%`,
+        maxWidth: `100%`,
       }}>
-      <img src={logo} alt={`FRC Jumpstart`} height={`150`} />
-      <Media.Body>
-        <ul style={{ listStyleType: `none` }}>
-          <li
+      <img src={logo} alt={`FRC Jumpstart`} height={`100`} style={{ float: `left` }} />
+      <ul style={{ listStyleType: `none`, display: `inline-block` }}>
+        <li
+          style={{
+            color: `#FFFFFF`,
+            fontFamily: `Nunito Sans`,
+          }}>
+          FRC Jumpstart New England
+          </li>
+        <li
+          style={{
+            color: `#FFFFFF`,
+            fontFamily: `Nunito Sans`,
+          }}>
+          Team 501 - The PowerKnights Robotics Team
+          </li>
+        <li>
+          <a
             style={{
               color: `#FFFFFF`,
               fontFamily: `Nunito Sans`,
-              fontSize: `16px`,
-            }}>
-            FRC Jumpstart New England
-          </li>
-          <li
+            }}
+            href='https://www.google.com/maps/place/329+Mast+Rd,+Goffstown,+NH+03045/@43.0093354,-71.5398788,17z/data=!3m1!4b1!4m5!3m4!1s0x89e2484f84512f11:0x95fa667bd1c063ed!8m2!3d43.0093354!4d-71.5376901'
+            target='_blank'
+            rel='noreferrer'>
+            329 Mast Road, Room 101, Goffstown, NH 03045
+            </a>
+        </li>
+        <li>
+          <a
             style={{
               color: `#FFFFFF`,
               fontFamily: `Nunito Sans`,
-              fontSize: `16px`,
-            }}>
-            Team 501 - The PowerKnights Robotics Team
-          </li>
-          <li>
-            <a
-              style={{
-                color: `#FFFFFF`,
-                fontFamily: `Nunito Sans`,
-                fontSize: `16px`,
-                textDecoration: `none`,
-              }}
-              href='https://www.google.com/maps/place/329+Mast+Rd,+Goffstown,+NH+03045/@43.0093354,-71.5398788,17z/data=!3m1!4b1!4m5!3m4!1s0x89e2484f84512f11:0x95fa667bd1c063ed!8m2!3d43.0093354!4d-71.5376901'
-              target='_blank'
-              rel='noreferrer'>
-              329 Mast Road, Room 101, Goffstown, NH 03045
+              textDecoration: `none`,
+            }}
+            href='mailto:FRCJumpstart@powerknights.com'>
+            FRCJumpstart@powerknights.com
             </a>
-          </li>
-          <li>
-            <a
-              style={{
-                color: `#FFFFFF`,
-                fontFamily: `Nunito Sans`,
-                fontSize: `16px`,
-                textDecoration: `none`,
-              }}
-              href='mailto:FRCJumpstart@powerknights.com'>
-              FRCJumpstart@powerknights.com
+        </li>
+        <li>
+          <a
+            style={{
+              color: `#FFFFFF`,
+              fontFamily: `Nunito Sans`,
+              textDecoration: `none`,
+            }}
+            href='tel:603-512-9166'>
+            603-512-9166
             </a>
-          </li>
-          <li>
-            <a
-              style={{
-                color: `#FFFFFF`,
-                fontFamily: `Nunito Sans`,
-                fontSize: `16px`,
-                textDecoration: `none`,
-              }}
-              href='tel:603-512-9166'>
-              603-512-9166
-            </a>
-          </li>
-        </ul>
+        </li>
+      </ul>
 
-        <p className='text-light' style={{ fontFamily: 'Nunito Sans' }}>
-          FRC Jumpstart New England. Website by Team 501 - The PowerKnights
-          Robotics Team
+      <p className='text-light text-center' style={{ fontFamily: 'Nunito Sans' }}>
+        FRC Jumpstart New England. Website by Team 501 - The PowerKnights
+        Robotics Team
         </p>
-      </Media.Body>
-    </Media>
+    </Container>
   );
 }
