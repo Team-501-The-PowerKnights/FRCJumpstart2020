@@ -106,64 +106,95 @@ export default function Home() {
       <Jumbotron
         className='text-light'
         style={{ backgroundColor: `#FFDE17`, marginBottom: 0, padding: `10%` }}>
-        <div style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-        }}>
+        <div
+          style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+          }}>
           <ListGroup horizontal='md' style={{ display: `flex` }}>
-            <ListGroup.Item style={{
-              backgroundColor: `#FFDE17`,
-              border: `none`,
-              flexGrow: 2,
-            }}>
+            <ListGroup.Item
+              style={{
+                backgroundColor: `#FFDE17`,
+                border: `none`,
+                flexGrow: 2,
+              }}>
               <Card
                 className='text-center'
-                style={{ backgroundColor: `#FFFFFF`, display: `inline-block`, width: `100%` }}>
+                style={{
+                  backgroundColor: `#FFFFFF`,
+                  display: `inline-block`,
+                  width: `100%`,
+                }}>
                 <Card.Body>
-                  <Card.Title style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                  <Card.Title
+                    style={{ backgroundColor: `#FFDE17` }}></Card.Title>
                 </Card.Body>
                 <Card.Footer className='text-dark'>Participants</Card.Footer>
               </Card>
             </ListGroup.Item>
-            <ListGroup.Item style={{
-              backgroundColor: `#FFDE17`,
-              border: `none`,
-              flexGrow: 2,
-            }}><Card
-              className='text-center'
-              style={{ backgroundColor: `#FFFFFF`, display: `inline-block`, width: `100%` }}>
+            <ListGroup.Item
+              style={{
+                backgroundColor: `#FFDE17`,
+                border: `none`,
+                flexGrow: 2,
+              }}>
+              <Card
+                className='text-center'
+                style={{
+                  backgroundColor: `#FFFFFF`,
+                  display: `inline-block`,
+                  width: `100%`,
+                }}>
                 <Card.Body>
-                  <Card.Title style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                  <Card.Title
+                    style={{ backgroundColor: `#FFDE17` }}></Card.Title>
                 </Card.Body>
                 <Card.Footer className='text-dark'>Tracks</Card.Footer>
-              </Card></ListGroup.Item>
-            <ListGroup.Item style={{
-              backgroundColor: `#FFDE17`,
-              border: `none`,
-              flexGrow: 2,
-            }}><Card
-              className='text-center'
-              style={{ backgroundColor: `#FFFFFF`, display: `inline-block`, width: `100%` }}>
+              </Card>
+            </ListGroup.Item>
+            <ListGroup.Item
+              style={{
+                backgroundColor: `#FFDE17`,
+                border: `none`,
+                flexGrow: 2,
+              }}>
+              <Card
+                className='text-center'
+                style={{
+                  backgroundColor: `#FFFFFF`,
+                  display: `inline-block`,
+                  width: `100%`,
+                }}>
                 <Card.Body>
-                  <Card.Title style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                  <Card.Title
+                    style={{ backgroundColor: `#FFDE17` }}></Card.Title>
                 </Card.Body>
                 <Card.Footer className='text-dark'>Sessions</Card.Footer>
-              </Card></ListGroup.Item>
-            <ListGroup.Item style={{
-              backgroundColor: `#FFDE17`,
-              border: `none`,
-              flexGrow: 2,
-            }}><Card
-              className='text-center'
-              style={{ backgroundColor: `#FFFFFF`, display: `inline-block`, width: `100%` }}>
+              </Card>
+            </ListGroup.Item>
+            <ListGroup.Item
+              style={{
+                backgroundColor: `#FFDE17`,
+                border: `none`,
+                flexGrow: 2,
+              }}>
+              <Card
+                className='text-center'
+                style={{
+                  backgroundColor: `#FFFFFF`,
+                  display: `inline-block`,
+                  width: `100%`,
+                }}>
                 <Card.Body>
-                  <Card.Title style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                  <Card.Title
+                    style={{ backgroundColor: `#FFDE17` }}></Card.Title>
                 </Card.Body>
                 <Card.Footer className='text-dark'>Speakers</Card.Footer>
-              </Card></ListGroup.Item >
-          </ListGroup >
+              </Card>
+            </ListGroup.Item>
+          </ListGroup>
         </div>
-      </Jumbotron >
+      </Jumbotron>
       <Jumbotron
         className='text-light'
         id='speakers'

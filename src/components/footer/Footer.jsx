@@ -16,7 +16,12 @@ export default function Footer() {
         left: 0,
         maxWidth: `100%`,
       }}>
-      <img src={logo} alt={`FRC Jumpstart`} height={`100`} style={{ float: `left` }} />
+      <img
+        src={logo}
+        alt={`FRC Jumpstart`}
+        height={`100`}
+        style={{ float: `left` }}
+      />
       <ul style={{ listStyleType: `none`, display: `inline-block` }}>
         <li
           style={{
@@ -24,14 +29,14 @@ export default function Footer() {
             fontFamily: `Nunito Sans`,
           }}>
           FRC Jumpstart New England
-          </li>
+        </li>
         <li
           style={{
             color: `#FFFFFF`,
             fontFamily: `Nunito Sans`,
           }}>
           Team 501 - The PowerKnights Robotics Team
-          </li>
+        </li>
         <li>
           <a
             style={{
@@ -42,7 +47,7 @@ export default function Footer() {
             target='_blank'
             rel='noreferrer'>
             329 Mast Road, Room 101, Goffstown, NH 03045
-            </a>
+          </a>
         </li>
         <li>
           <a
@@ -53,7 +58,7 @@ export default function Footer() {
             }}
             href='mailto:FRCJumpstart@powerknights.com'>
             FRCJumpstart@powerknights.com
-            </a>
+          </a>
         </li>
         <li>
           <a
@@ -64,14 +69,16 @@ export default function Footer() {
             }}
             href='tel:603-512-9166'>
             603-512-9166
-            </a>
+          </a>
         </li>
       </ul>
 
-      <p className='text-light text-center' style={{ fontFamily: 'Nunito Sans' }}>
+      <p
+        className='text-light text-center'
+        style={{ fontFamily: 'Nunito Sans' }}>
         FRC Jumpstart New England. Website by Team 501 - The PowerKnights
         Robotics Team
-        </p>
+      </p>
     </Container>
   );
 }
