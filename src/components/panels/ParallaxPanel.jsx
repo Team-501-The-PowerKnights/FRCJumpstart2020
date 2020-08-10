@@ -1,20 +1,21 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 export default function ParallaxPanel({ image, children }) {
   return (
-    <Container
-      fluid
+    <Jumbotron
+      className='text-center'
       style={{
+        margin: 0,
         backgroundImage: `url(${image})`,
-        width: `100%`,
-        height: `auto`,
         backgroundAttachment: `fixed`,
         backgroundPosition: `center`,
         backgroundRepeat: `no-repeat`,
-        backgroundSize: `contain`,
+        backgroundSize: `cover`,
+        padding: `17.5%`,
       }}>
       {children}
-    </Container>
+    </Jumbotron>
   );
 }

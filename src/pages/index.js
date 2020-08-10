@@ -8,7 +8,6 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import TopMenu from '../components/menu/TopMenu';
 import Footer from '../components/footer/Footer';
 
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 
 import banner from '../images/banner.jpg';
@@ -18,6 +17,8 @@ import crowd from '../images/crowd.jpeg';
 import 'typeface-nunito-sans';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import ParallaxPanel from '../components/panels/ParallaxPanel';
+import ContentPanel, { StandardContentPanel } from '../components/panels/ContentPanel';
 
 export default function Home() {
   return (
@@ -30,17 +31,7 @@ export default function Home() {
       />
       <CssBaseline />
       <TopMenu />
-      <Jumbotron
-        className='text-center'
-        style={{
-          margin: 0,
-          backgroundImage: `url(${banner})`,
-          backgroundAttachment: `fixed`,
-          backgroundPosition: `center`,
-          backgroundRepeat: `no-repeat`,
-          backgroundSize: `cover`,
-          padding: `17.5%`,
-        }}>
+      <ParallaxPanel image={banner}>
         <Card
           style={{ width: '18rem', marginLeft: `auto`, marginRight: `auto` }}>
           <Card.Img variant='top' src={logo} />
@@ -66,46 +57,17 @@ export default function Home() {
             </Button>
           </Card.Body>
         </Card>
-      </Jumbotron>
-      <Jumbotron
-        className='text-light'
-        id='about'
-        style={{ backgroundColor: `#2F3292`, marginBottom: 0, padding: `10%` }}>
-        <ListGroup
-          style={{ margin: `auto`, maxWidth: `45rem` }}
-          variant='flush'>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#2F3292` }}>
-            <h1>FRC Jumpstart</h1>
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#2F3292` }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+      </ParallaxPanel>
+      <StandardContentPanel title='FRC Jumpstart' backgroundColor='#2F3292' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
             ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
             luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
             Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
             dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.{' '}
-          </ListGroup.Item>
-        </ListGroup>
-      </Jumbotron>
-      <Jumbotron
-        style={{
-          margin: 0,
-          backgroundImage: `url(${crowd})`,
-          backgroundAttachment: `fixed`,
-          backgroundPosition: `center`,
-          backgroundRepeat: `no-repeat`,
-          backgroundSize: `cover`,
-          padding: `17.5%`,
-        }}></Jumbotron>
-      <Jumbotron
-        className='text-light'
-        style={{ backgroundColor: `#FFDE17`, marginBottom: 0, padding: `10%` }}>
+            nisl eu nisl.' />
+      <ParallaxPanel image={crowd} />
+      <ContentPanel backgroundColor='#FFDE17'>
         <div
           style={{
             marginLeft: `auto`,
@@ -194,114 +156,34 @@ export default function Home() {
             </ListGroup.Item>
           </ListGroup>
         </div>
-      </Jumbotron>
-      <Jumbotron
-        className='text-light'
-        id='speakers'
-        style={{ backgroundColor: `#2F3292`, marginBottom: 0, padding: `10%` }}>
-        <ListGroup
-          style={{ margin: `auto`, maxWidth: `45rem` }}
-          variant='flush'>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#2F3292` }}>
-            <h1>Speakers</h1>
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#2F3292` }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+      </ContentPanel>
+      <StandardContentPanel title='Speakers' backgroundColor='#2F3292' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
             ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
             luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
             Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
             dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.{' '}
-          </ListGroup.Item>
-        </ListGroup>
-      </Jumbotron>
-      <Jumbotron
-        style={{
-          margin: 0,
-          backgroundImage: `url(${crowd})`,
-          backgroundAttachment: `fixed`,
-          backgroundPosition: `center`,
-          backgroundRepeat: `no-repeat`,
-          backgroundSize: `cover`,
-          padding: `17.5%`,
-        }}></Jumbotron>
-      <Jumbotron
-        className='text-light'
-        id='schedule'
-        style={{ backgroundColor: `#FFDE17`, marginBottom: 0, padding: `10%` }}>
-        <ListGroup
-          style={{ margin: `auto`, maxWidth: `45rem` }}
-          variant='flush'>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#FFDE17` }}>
-            <h1>Schedule</h1>
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#FFDE17` }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+            nisl eu nisl.' />
+      <ParallaxPanel image={crowd} />
+      <StandardContentPanel title='Schedule' backgroundColor='#FFDE17' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
             ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
             luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
             Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
             dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.{' '}
-          </ListGroup.Item>
-        </ListGroup>
-      </Jumbotron>
-      <Jumbotron
-        style={{
-          margin: 0,
-          backgroundImage: `url(${crowd})`,
-          backgroundAttachment: `fixed`,
-          backgroundPosition: `center`,
-          backgroundRepeat: `no-repeat`,
-          backgroundSize: `cover`,
-          padding: `17.5%`,
-        }}></Jumbotron>
-      <Jumbotron
-        className='text-light'
-        style={{ backgroundColor: `#2F3292`, marginBottom: 0, padding: `10%` }}>
-        <ListGroup
-          style={{ margin: `auto`, maxWidth: `45rem` }}
-          variant='flush'>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#2F3292` }}>
-            <h1>Sponsors</h1>
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='text-light'
-            style={{ backgroundColor: `#2F3292` }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+            nisl eu nisl.' />
+      <ParallaxPanel image={crowd} />
+      <StandardContentPanel title='Sponsors' backgroundColor='#2F3292' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
             ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
             luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
             Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
             dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.{' '}
-          </ListGroup.Item>
-        </ListGroup>
-      </Jumbotron>
-      <Jumbotron
-        style={{
-          margin: 0,
-          backgroundImage: `url(${crowd})`,
-          backgroundAttachment: `fixed`,
-          backgroundPosition: `center`,
-          backgroundRepeat: `no-repeat`,
-          backgroundSize: `cover`,
-          padding: `17.5%`,
-        }}></Jumbotron>
+            nisl eu nisl.' />
+      <ParallaxPanel image={crowd} />
       <Footer />
     </>
   );
