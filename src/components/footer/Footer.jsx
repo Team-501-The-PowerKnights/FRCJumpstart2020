@@ -24,23 +24,23 @@ export default function Footer() {
       />
       <ul style={{ listStyleType: `none`, display: `inline-block` }}>
         <li
+          className='text-dark'
           style={{
-            color: `#FFFFFF`,
             fontFamily: `Nunito Sans`,
           }}>
           FRC Jumpstart New England
         </li>
         <li
+          className='text-dark'
           style={{
-            color: `#FFFFFF`,
             fontFamily: `Nunito Sans`,
           }}>
           Team 501 - The PowerKnights Robotics Team
         </li>
         <li>
           <a
+            className='text-dark'
             style={{
-              color: `#FFFFFF`,
               fontFamily: `Nunito Sans`,
             }}
             href='https://www.google.com/maps/place/329+Mast+Rd,+Goffstown,+NH+03045/@43.0093354,-71.5398788,17z/data=!3m1!4b1!4m5!3m4!1s0x89e2484f84512f11:0x95fa667bd1c063ed!8m2!3d43.0093354!4d-71.5376901'
@@ -51,8 +51,8 @@ export default function Footer() {
         </li>
         <li>
           <a
+            className='text-dark'
             style={{
-              color: `#FFFFFF`,
               fontFamily: `Nunito Sans`,
               textDecoration: `none`,
             }}
@@ -62,8 +62,8 @@ export default function Footer() {
         </li>
         <li>
           <a
+            className='text-dark'
             style={{
-              color: `#FFFFFF`,
               fontFamily: `Nunito Sans`,
               textDecoration: `none`,
             }}
@@ -72,9 +72,8 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-
       <p
-        className='text-light text-center'
+        className='text-dark text-center'
         style={{ fontFamily: 'Nunito Sans' }}>
         FRC Jumpstart New England. Website by Team 501 - The PowerKnights
         Robotics Team
