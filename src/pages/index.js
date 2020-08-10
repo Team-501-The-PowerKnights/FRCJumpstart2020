@@ -45,7 +45,7 @@ export default function Home() {
       <ParallaxPanel image={banner}>
         <Card
           style={{ width: '18rem', marginLeft: `auto`, marginRight: `auto` }}>
-          <Card.Img variant='top' src={logo} />
+          <Card.Img variant='top' src={logo} alt='FRC Jumpstart' />
           <Card.Body>
             <ListGroup variant='flush'>
               <ListGroup.Item>
