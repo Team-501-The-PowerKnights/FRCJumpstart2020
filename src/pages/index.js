@@ -137,6 +137,7 @@ export default function Home() {
       </Jumbotron>
       <Jumbotron
         className='text-light'
+        id='speakers'
         style={{ backgroundColor: `#2F3292`, marginBottom: 0, padding: `10%` }}>
         <ListGroup
           style={{ margin: `auto`, maxWidth: `45rem` }}
@@ -172,6 +173,7 @@ export default function Home() {
         }}></Jumbotron>
       <Jumbotron
         className='text-light'
+        id='schedule'
         style={{ backgroundColor: `#FFDE17`, marginBottom: 0, padding: `10%` }}>
         <ListGroup
           style={{ margin: `auto`, maxWidth: `45rem` }}
