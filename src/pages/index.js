@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 
@@ -25,12 +26,20 @@ import ContentPanel, {
 export default function Home() {
   return (
     <>
-      <link
-        rel='stylesheet'
-        href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
-        integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk'
-        crossOrigin='anonymous'
-      />
+      <Helmet>
+        <html lang='en' />
+        <title>FRC Jumpstart</title>
+        <meta
+          name='description'
+          content='FRC Jumpstart is a New England-based learning and training event for FTC and FRC teams of all levels.'
+        />
+        <link
+          rel='stylesheet'
+          href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
+          integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk'
+          crossOrigin='anonymous'
+        />
+      </Helmet>
       <CssBaseline />
       <TopMenu />
       <ParallaxPanel image={banner}>
