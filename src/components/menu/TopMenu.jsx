@@ -23,31 +23,34 @@ export default function TopMenu() {
           <img src={logo} alt={`FRC Jumpstart`} height={`100`} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='mr-auto'>
-            <MenuItem link='#about' openInNewTab='false' hoverColor='#FFDE17'>
+        <Navbar.Collapse id='basic-navbar-nav' style={{ display: `inline-flex`, flexDirection: `row`, alignContent: `space-around`, alignItems: `center` }}>
+          <Nav className='mr-auto' style={{ display: `inline-flex`, flexDirection: `row`, alignContent: `space-around`, alignItems: `center`, flexGrow: 2, paddingLeft: `1%` }}>
+            <div style={{ flexGrow: 1 }}><MenuItem link='#about' openInNewTab={false} hoverColor='#FFDE17'>
               About
-            </MenuItem>
-            <MenuItem
+            </MenuItem></div>
+            <div style={{ flexGrow: 1 }}><MenuItem
               link='#speakers'
-              openInNewTab='false'
+              openInNewTab={false}
               hoverColor='#FFDE17'>
               Speakers
-            </MenuItem>
-            <MenuItem
+            </MenuItem></div>
+            <div style={{ flexGrow: 1 }}><MenuItem
               link='#schedule'
-              openInNewTab='false'
+              openInNewTab={false}
               hoverColor='#FFDE17'>
               Schedule
-            </MenuItem>
-            <MenuItem
+            </MenuItem></div>
+            <div style={{ flexGrow: 1 }}><MenuItem
               link='#subscribe'
-              openInNewTab='false'
+              openInNewTab={false}
               hoverColor='#FFDE17'>
               Subscribe
-            </MenuItem>
+            </MenuItem></div>
           </Nav>
-          <SocialMenu hoverColor='#FFDE17' />
+          <div style={{ flexGrow: 6 }}></div>
+          <div style={{ flexGrow: 1 }}>
+            <SocialMenu hoverColor='#FFDE17' />
+          </div>
         </Navbar.Collapse>
       </Navbar>
     </Headroom>

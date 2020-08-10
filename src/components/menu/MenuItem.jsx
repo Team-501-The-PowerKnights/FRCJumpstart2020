@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 
-import Nav from 'react-bootstrap/Nav';
-
 import 'typeface-nunito-sans';
 
 export default function MenuItem({ link, children, openInNewTab, hoverColor }) {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <Nav.Link
-      href={link}
+    <a href={link}
+      target={openInNewTab ? '_blank' : '_self'}
+      rel={`noreferrer`}
       style={{
         color: hovering ? hoverColor : `#FFFFFF`,
         fontFamily: 'Nunito Sans',
@@ -17,9 +16,8 @@ export default function MenuItem({ link, children, openInNewTab, hoverColor }) {
       }}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
-      target={openInNewTab ? '_blank' : '_self'}
-      rel={`noreferrer`}>
+    >
       {children}
-    </Nav.Link>
+    </a>
   );
 }
