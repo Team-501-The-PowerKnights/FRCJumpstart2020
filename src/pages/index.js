@@ -44,8 +44,8 @@ export default function Home() {
       <TopMenu />
       <ParallaxPanel image={banner}>
         <Card
-          style={{ width: '18rem', marginLeft: `auto`, marginRight: `auto` }}>
-          <Card.Img variant='top' src={logo} alt='FRC Jumpstart' />
+          style={{ width: '50vw', marginLeft: `auto`, marginRight: `auto` }}>
+          <Card.Img variant='top' src={logo} alt='FRC Jumpstart' width='100' />
           <Card.Body>
             <ListGroup variant='flush'>
               <ListGroup.Item>
