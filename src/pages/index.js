@@ -18,7 +18,9 @@ import 'typeface-nunito-sans';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ParallaxPanel from '../components/panels/ParallaxPanel';
-import ContentPanel, { StandardContentPanel } from '../components/panels/ContentPanel';
+import ContentPanel, {
+  StandardContentPanel,
+} from '../components/panels/ContentPanel';
 
 export default function Home() {
   return (
@@ -58,14 +60,18 @@ export default function Home() {
           </Card.Body>
         </Card>
       </ParallaxPanel>
-      <StandardContentPanel title='FRC Jumpstart' backgroundColor='#2F3292' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+      <StandardContentPanel
+        title='FRC Jumpstart'
+        backgroundColor='#2F3292'
+        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
             ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
             luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
             Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
             dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.' />
+            nisl eu nisl.'
+      />
       <ParallaxPanel image={crowd} />
       <ContentPanel backgroundColor='#FFDE17'>
         <div
@@ -157,32 +163,44 @@ export default function Home() {
           </ListGroup>
         </div>
       </ContentPanel>
-      <StandardContentPanel title='Speakers' backgroundColor='#2F3292' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+      <StandardContentPanel
+        title='Speakers'
+        backgroundColor='#2F3292'
+        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
             ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
             luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
             Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
             dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.' />
+            nisl eu nisl.'
+      />
       <ParallaxPanel image={crowd} />
-      <StandardContentPanel title='Schedule' backgroundColor='#FFDE17' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+      <StandardContentPanel
+        title='Schedule'
+        backgroundColor='#FFDE17'
+        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
             ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
             luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
             Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
             dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.' />
+            nisl eu nisl.'
+      />
       <ParallaxPanel image={crowd} />
-      <StandardContentPanel title='Sponsors' backgroundColor='#2F3292' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+      <StandardContentPanel
+        title='Sponsors'
+        backgroundColor='#2F3292'
+        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
             ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
             luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
             Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
             dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.' />
+            nisl eu nisl.'
+      />
       <ParallaxPanel image={crowd} />
       <Footer />
     </>
