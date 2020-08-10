@@ -32,7 +32,6 @@ export default function Home() {
       <TopMenu />
       <Jumbotron
         className='text-center'
-        id='about'
         style={{
           margin: 0,
           backgroundImage: `url(${banner})`,
@@ -40,15 +39,25 @@ export default function Home() {
           backgroundPosition: `center`,
           backgroundRepeat: `no-repeat`,
           backgroundSize: `cover`,
-          padding: `17.5%`
+          padding: `17.5%`,
         }}>
         <Card
           style={{ width: '18rem', marginLeft: `auto`, marginRight: `auto` }}>
           <Card.Img variant='top' src={logo} />
           <Card.Body>
-            <ListGroup variant="flush">
-              <ListGroup.Item><EventIcon /> <p style={{ fontFamily: `Nunito Sans`, display: `inline` }}>November 21, 2020</p></ListGroup.Item>
-              <ListGroup.Item><LocationOnIcon /> <p style={{ fontFamily: `Nunito Sans`, display: `inline` }}>YouTube / Twitch</p></ListGroup.Item>
+            <ListGroup variant='flush'>
+              <ListGroup.Item>
+                <EventIcon />{' '}
+                <p style={{ fontFamily: `Nunito Sans`, display: `inline` }}>
+                  November 21, 2020
+                </p>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <LocationOnIcon />{' '}
+                <p style={{ fontFamily: `Nunito Sans`, display: `inline` }}>
+                  YouTube / Twitch
+                </p>
+              </ListGroup.Item>
             </ListGroup>
             <Button variant='primary' style={{ backgroundColor: `#2F3292` }}>
               <a href='/' style={{ color: `#FFFFFF`, textDecoration: `none` }}>
@@ -58,15 +67,33 @@ export default function Home() {
           </Card.Body>
         </Card>
       </Jumbotron>
-      <Jumbotron className='text-light' style={{ backgroundColor: `#2F3292`, marginBottom: 0, padding: `10%` }}>
-        <ListGroup style={{ margin: `auto`, maxWidth: `45rem`, }} variant='flush'>
-          <ListGroup.Item className='text-light' style={{ backgroundColor: `#2F3292` }}><h1>FRC Jumpstart</h1></ListGroup.Item>
-          <ListGroup.Item className='text-light' style={{ backgroundColor: `#2F3292` }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio. Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt, dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl nisl eu nisl. </ListGroup.Item>
+      <Jumbotron
+        className='text-light'
+        id='about'
+        style={{ backgroundColor: `#2F3292`, marginBottom: 0, padding: `10%` }}>
+        <ListGroup
+          style={{ margin: `auto`, maxWidth: `45rem` }}
+          variant='flush'>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#2F3292` }}>
+            <h1>FRC Jumpstart</h1>
+          </ListGroup.Item>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#2F3292` }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+            ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
+            luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
+            Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
+            dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
+            pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
+            vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
+            nisl eu nisl.{' '}
+          </ListGroup.Item>
         </ListGroup>
       </Jumbotron>
       <Jumbotron
-        className='text-center'
         style={{
           margin: 0,
           backgroundImage: `url(${crowd})`,
@@ -74,9 +101,145 @@ export default function Home() {
           backgroundPosition: `center`,
           backgroundRepeat: `no-repeat`,
           backgroundSize: `cover`,
-          padding: `15%`
-        }}>
+          padding: `17.5%`,
+        }}></Jumbotron>
+      <Jumbotron
+        className='text-light'
+        style={{ backgroundColor: `#FFDE17`, marginBottom: 0, padding: `10%` }}>
+        <ListGroup
+          horizontal
+          style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            width: `min-content`,
+          }}>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#FFDE17` }}>
+            Participants
+          </ListGroup.Item>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#FFDE17` }}>
+            Tracks
+          </ListGroup.Item>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#FFDE17` }}>
+            Sessions
+          </ListGroup.Item>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#FFDE17` }}>
+            Speakers
+          </ListGroup.Item>
+        </ListGroup>
       </Jumbotron>
+      <Jumbotron
+        className='text-light'
+        style={{ backgroundColor: `#2F3292`, marginBottom: 0, padding: `10%` }}>
+        <ListGroup
+          style={{ margin: `auto`, maxWidth: `45rem` }}
+          variant='flush'>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#2F3292` }}>
+            <h1>Speakers</h1>
+          </ListGroup.Item>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#2F3292` }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+            ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
+            luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
+            Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
+            dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
+            pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
+            vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
+            nisl eu nisl.{' '}
+          </ListGroup.Item>
+        </ListGroup>
+      </Jumbotron>
+      <Jumbotron
+        style={{
+          margin: 0,
+          backgroundImage: `url(${crowd})`,
+          backgroundAttachment: `fixed`,
+          backgroundPosition: `center`,
+          backgroundRepeat: `no-repeat`,
+          backgroundSize: `cover`,
+          padding: `17.5%`,
+        }}></Jumbotron>
+      <Jumbotron
+        className='text-light'
+        style={{ backgroundColor: `#FFDE17`, marginBottom: 0, padding: `10%` }}>
+        <ListGroup
+          style={{ margin: `auto`, maxWidth: `45rem` }}
+          variant='flush'>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#FFDE17` }}>
+            <h1>Schedule</h1>
+          </ListGroup.Item>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#FFDE17` }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+            ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
+            luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
+            Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
+            dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
+            pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
+            vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
+            nisl eu nisl.{' '}
+          </ListGroup.Item>
+        </ListGroup>
+      </Jumbotron>
+      <Jumbotron
+        style={{
+          margin: 0,
+          backgroundImage: `url(${crowd})`,
+          backgroundAttachment: `fixed`,
+          backgroundPosition: `center`,
+          backgroundRepeat: `no-repeat`,
+          backgroundSize: `cover`,
+          padding: `17.5%`,
+        }}></Jumbotron>
+      <Jumbotron
+        className='text-light'
+        style={{ backgroundColor: `#2F3292`, marginBottom: 0, padding: `10%` }}>
+        <ListGroup
+          style={{ margin: `auto`, maxWidth: `45rem` }}
+          variant='flush'>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#2F3292` }}>
+            <h1>Sponsors</h1>
+          </ListGroup.Item>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#2F3292` }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
+            ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
+            luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
+            Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
+            dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
+            pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
+            vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
+            nisl eu nisl.{' '}
+          </ListGroup.Item>
+        </ListGroup>
+      </Jumbotron>
+      <Jumbotron
+        style={{
+          margin: 0,
+          backgroundImage: `url(${crowd})`,
+          backgroundAttachment: `fixed`,
+          backgroundPosition: `center`,
+          backgroundRepeat: `no-repeat`,
+          backgroundSize: `cover`,
+          padding: `17.5%`,
+        }}></Jumbotron>
       <Footer />
     </>
   );
