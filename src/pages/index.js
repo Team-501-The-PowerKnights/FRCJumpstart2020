@@ -15,6 +15,9 @@ import banner from '../images/banner.webp';
 import logo from '../images/logo.webp';
 import crowd from '../images/crowd.webp';
 import speakers from '../images/speakers.webp';
+import nhfirst from '../images/nhfirst.webp';
+import snhu from '../images/snhu-logo.webp';
+import powerknights from '../images/powerknights.webp';
 
 import 'typeface-nunito-sans';
 import Card from 'react-bootstrap/Card';
@@ -216,18 +219,48 @@ export default function Home() {
             nisl eu nisl.'
       /> */}
       <ParallaxPanel image={speakers} />
-      <StandardContentPanel
-        title='Sponsors'
-        backgroundColor='#2F3292'
-        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
-            ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
-            luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
-            Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
-            dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
-            pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
-            vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.'
-      />
+      <ContentPanel backgroundColor='#2F3292'>
+        <ListGroup
+          style={{ margin: `auto`, maxWidth: `45rem` }}
+          variant='flush'>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: '#2F3292' }}>
+            <h1>Sponsors</h1>
+          </ListGroup.Item>
+          <ListGroup.Item style={{ backgroundColor: '#2F3292' }}>
+            <ListGroup variant='flush' style={{ margin: `auto` }}>
+              <ListGroup.Item
+                style={{ backgroundColor: '#2F3292', textAlign: 'center' }}>
+                <img
+                  src={nhfirst}
+                  alt='New Hampshire FIRST'
+                  style={{ height: `10vw` }}
+                />
+                <p>
+                  <em style={{ fontSize: `4vw` }}>NEW HAMPSHIRE</em>
+                </p>
+              </ListGroup.Item>
+              <ListGroup.Item
+                style={{ backgroundColor: '#2F3292', textAlign: 'center' }}>
+                <img
+                  src={powerknights}
+                  alt='Team 501 - The PowerKnights'
+                  style={{ height: `10vw` }}
+                />
+              </ListGroup.Item>
+              <ListGroup.Item
+                style={{ backgroundColor: '#2F3292', textAlign: 'center' }}>
+                <img
+                  src={snhu}
+                  alt='Southern New Hampshire University'
+                  style={{ height: `10vw` }}
+                />
+              </ListGroup.Item>
+            </ListGroup>
+          </ListGroup.Item>
+        </ListGroup>
+      </ContentPanel>
       <Footer />
     </>
   );
