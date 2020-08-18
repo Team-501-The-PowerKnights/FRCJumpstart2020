@@ -62,7 +62,11 @@ export default function Home() {
               </ListGroup.Item>
             </ListGroup>
             <Button variant='primary' style={{ backgroundColor: `#2F3292` }}>
-              <a href='/' style={{ color: `#FFFFFF`, textDecoration: `none` }}>
+              <a
+                href='https://www.facebook.com/events/785887075231051/'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: `#FFFFFF`, textDecoration: `none` }}>
                 Sign Up Now
               </a>
             </Button>
