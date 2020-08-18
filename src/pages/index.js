@@ -103,6 +103,7 @@ export default function Home() {
                 <Card.Body>
                   <Card.Title
                     style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                  <h1>--</h1>
                 </Card.Body>
                 <Card.Footer className='text-dark'>Participants</Card.Footer>
               </Card>
@@ -123,6 +124,7 @@ export default function Home() {
                 <Card.Body>
                   <Card.Title
                     style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                  <h1>--</h1>
                 </Card.Body>
                 <Card.Footer className='text-dark'>Tracks</Card.Footer>
               </Card>
@@ -143,6 +145,7 @@ export default function Home() {
                 <Card.Body>
                   <Card.Title
                     style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                  <h1>--</h1>
                 </Card.Body>
                 <Card.Footer className='text-dark'>Sessions</Card.Footer>
               </Card>
@@ -163,6 +166,7 @@ export default function Home() {
                 <Card.Body>
                   <Card.Title
                     style={{ backgroundColor: `#FFDE17` }}></Card.Title>
+                  <h1>--</h1>
                 </Card.Body>
                 <Card.Footer className='text-dark'>Speakers</Card.Footer>
               </Card>
@@ -170,19 +174,36 @@ export default function Home() {
           </ListGroup>
         </div>
       </ContentPanel>
-      <StandardContentPanel
-        title='Speakers'
-        backgroundColor='#2F3292'
-        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
-            ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
-            luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
-            Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
-            dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
-            pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
-            vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.'
-      />
-      <StandardContentPanel
+      <ContentPanel backgroundColor='#2F3292'>
+        <ListGroup
+          style={{ margin: `auto`, maxWidth: `45rem` }}
+          variant='flush'>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#2F3292` }}>
+            <h1>Speakers</h1>
+          </ListGroup.Item>
+          <ListGroup.Item
+            className='text-light'
+            style={{ backgroundColor: `#2F3292` }}>
+            Look for announcements about keynote speakers, a list of presenters
+            / teams presenting sessions and panelists shortly.
+          </ListGroup.Item>
+          <ListGroup.Item style={{ backgroundColor: `#2F3292` }}>
+            <Button variant='primary' style={{ backgroundColor: `#FFDE17` }}>
+              <a
+                className='text-dark'
+                href='https://forms.gle/xBk75axUkY68Hxh18'
+                target='_blank'
+                rel='noreferrer'
+                style={{ textDecoration: `none` }}>
+                Share Your Expertise
+              </a>
+            </Button>
+          </ListGroup.Item>
+        </ListGroup>
+      </ContentPanel>
+      {/* <StandardContentPanel
         title='Schedule'
         backgroundColor='#FFDE17'
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
@@ -193,7 +214,7 @@ export default function Home() {
             pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
             nisl eu nisl.'
-      />
+      /> */}
       <ParallaxPanel image={speakers} />
       <StandardContentPanel
         title='Sponsors'
