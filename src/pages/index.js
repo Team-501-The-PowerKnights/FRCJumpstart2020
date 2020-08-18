@@ -14,6 +14,7 @@ import Button from 'react-bootstrap/Button';
 import banner from '../images/banner.webp';
 import logo from '../images/logo.webp';
 import crowd from '../images/crowd.webp';
+import speakers from '../images/speakers.webp';
 
 import 'typeface-nunito-sans';
 import Card from 'react-bootstrap/Card';
@@ -181,7 +182,6 @@ export default function Home() {
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
             nisl eu nisl.'
       />
-      <ParallaxPanel image={crowd} />
       <StandardContentPanel
         title='Schedule'
         backgroundColor='#FFDE17'
@@ -194,7 +194,7 @@ export default function Home() {
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
             nisl eu nisl.'
       />
-      <ParallaxPanel image={crowd} />
+      <ParallaxPanel image={speakers} />
       <StandardContentPanel
         title='Sponsors'
         backgroundColor='#2F3292'
@@ -207,7 +207,6 @@ export default function Home() {
             vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
             nisl eu nisl.'
       />
-      <ParallaxPanel image={crowd} />
       <Footer />
     </>
   );
