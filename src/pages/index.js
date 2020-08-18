@@ -72,14 +72,7 @@ export default function Home() {
       <StandardContentPanel
         title='FRC Jumpstart'
         backgroundColor='#2F3292'
-        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi
-            ex, euismod dignissim sem at, aliquet congue felis. Duis scelerisque
-            luctus lobortis. Cras tempor fringilla dictum. Vivamus at urna odio.
-            Cras id dignissim mi. Duis luctus, libero vitae elementum tincidunt,
-            dolor leo efficitur sem, sed vehicula diam sapien at nibh. Aliquam
-            pharetra nulla vel vehicula sodales. Phasellus ornare, nisl in
-            vulputate eleifend, libero ipsum vulputate ex, eget vehicula nisl
-            nisl eu nisl.'
+        content='Created by a group of FIRST mentors, alumni, and students, including NEFIRST robot inspectors and judges, SNHU staff, and members of FRC Team 501 - The PowerKnights, FRC Jumpstart was founded in 2019 in order to bring veteran FIRST Robotics Competition (FRC) teams together with rookie FRC teams and team members in order to share knowledge and provide guidance. At FRC Jumpstart, speakers present on areas of expertise ranging from securing nonprofit status to software development to business planning to bumper creation.'
       />
       <ParallaxPanel image={crowd} />
       <ContentPanel backgroundColor='#FFDE17'>
