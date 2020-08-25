@@ -80,6 +80,7 @@ export default function Home() {
       <StandardContentPanel
         title='FRC Jumpstart'
         backgroundColor='#2F3292'
+        id='about'
         content='Created by a group of FIRST mentors, alumni, and students, including NEFIRST robot inspectors and judges, SNHU staff, and members of FRC Team 501 - The PowerKnights, FRC Jumpstart was founded in 2019 in order to bring veteran FIRST Robotics Competition (FRC) teams together with rookie FRC teams and team members in order to share knowledge and provide guidance. At FRC Jumpstart, speakers present on areas of expertise ranging from securing nonprofit status to software development to business planning to bumper creation.'
       />
       <ParallaxPanel image={crowd} />
@@ -177,7 +178,7 @@ export default function Home() {
           </ListGroup>
         </div>
       </ContentPanel>
-      <ContentPanel backgroundColor='#2F3292'>
+      <ContentPanel backgroundColor='#2F3292' id='speakers'>
         <ListGroup
           style={{ margin: `auto`, maxWidth: `45rem` }}
           variant='flush'>
